@@ -1,6 +1,6 @@
 # **Separate and Reconstruct: Asymmetric Encoder-Decoder for Speech Separation**  
 Team project repository for **CS472: Introduction to AI**  
-
+[Final Poster](https://github.com/71c1nw00n/SepReformer-anim/blob/main/cs470_p02_poster.jpg)
 ## **1. Data Pre-Processing**
 ### **1) Human Datasets**  
 There are 4 files for generalization and normalization to use human voices as a dataset.  
@@ -9,7 +9,6 @@ We used 4 types of datasets: **LibriSpeech, TIMIT, VCTK, WSJ0**.
 ### **2) Animal Datasets**  
 We used the `data_pre-processing.ipynb` file to process the animal data needed for training and testing the model.
 
----
 
 ## **2. Data Mixing**  
 The **animal+animal, animal+human, human+human** mixed audio files were created using the `data_mixing.ipynb` file.  
@@ -24,7 +23,6 @@ Our datasets used in the model are accessible at the links below:
 - **Final dataset** (n=32,000)  
 - **Actual used dataset** (n=1,800)  
 
----
 
 ## **3. Model Training**  
 In the latest update of the baseline model, a few bugs were identified, so we made some code adjustments.  
@@ -46,7 +44,6 @@ When all preparations are complete, train the model with the following command:
 ```bash
 $ !python run.py --model SepReformer_Base_WSJ0 --engine-mode train
 
----
 
 ## **4. Testing with Other Pretrained Models**  
 We tested our dataset with various pretrained speech separation models.  
